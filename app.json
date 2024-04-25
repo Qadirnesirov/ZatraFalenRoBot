@@ -1,15 +1,15 @@
 {
-      "name": "Fallen Robot",
-      "description": "Telegram Group Management Bot.",
-      "logo": "https://te.legra.ph/file/72e135da30a1a349f2844.jpg",
+      "name": "Zatra Nezaret",
+      "description": "Telegram Qrup İdarəetmə Botu.",
+      "logo": "https://telegra.ph/file/7cbc16a9c922358dff2d9.jpg",
       "keywords": [
          "telegram",
          "modular",
          "group",
          "manager",
-         "Fallen"
+         "Zatra"
       ],   
-   "repository": "https://github.com/AnonymousX1025/FallenRobot",
+   "repository": "https://github.com/Qadirnesirov/zatraFallenRobot",
    "stack": "heroku-22",
    "addons": [
       {
@@ -21,12 +21,12 @@
    ],
    "env": {
       "API_ID": {
-         "description": "Get this value from my.telegram.org/apps.",
+         "description": "Bu dəyəri əldə edin my.telegram.org/apps.",
          "required": true,
          "value": ""
       },
       "API_HASH": {
-         "description": "Get this value from my.telegram.org/apps.",
+         "description": "Bu dəyəri əldə edin my.telegram.org/apps.",
          "required": true,
          "value": ""
       },
