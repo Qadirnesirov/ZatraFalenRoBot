@@ -25,7 +25,7 @@ LOGGER = logging.getLogger(__name__)
 # if version < 3.6, stop bot.
 if sys.version_info[0] < 3 or sys.version_info[1] < 6:
     LOGGER.error(
-        "You MUST have a python version of at least 3.6! Multiple features depend on this. Bot quitting."
+        "Ən azı 3.6 python versiyasına sahib olmalısınız! Bir çox xüsusiyyətlər bundan asılıdır. Bot tərk edir."
     )
     quit(1)
 
@@ -45,7 +45,7 @@ if ENV:
     MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
     NO_LOAD = os.environ.get("NO_LOAD", "").split()
     START_IMG = os.environ.get(
-        "START_IMG", "https://telegra.ph/file/40eb1ed850cdea274693e.jpg"
+        "START_IMG", "https://telegra.ph/file/7cbc16a9c922358dff2d9.jpg"
     )
     STRICT_GBAN = bool(os.environ.get("STRICT_GBAN", True))
     SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "DevilsHeavenMF")
@@ -57,33 +57,33 @@ if ENV:
     try:
         OWNER_ID = int(os.environ.get("OWNER_ID", None))
     except ValueError:
-        raise Exception("Your OWNER_ID env variable is not a valid integer.")
+        raise Exception("OWNER_ID env dəyişəniniz etibarlı tam ədəd deyil.")
 
     try:
         BL_CHATS = set(int(x) for x in os.environ.get("BL_CHATS", "").split())
     except ValueError:
-        raise Exception("Your blacklisted chats list does not contain valid integers.")
+        raise Exception("Qara siyahıya salınmış söhbətlər siyahısında etibarlı tam ədədlər yoxdur.")
 
     try:
         DRAGONS = set(int(x) for x in os.environ.get("DRAGONS", "").split())
         DEV_USERS = set(int(x) for x in os.environ.get("DEV_USERS", "").split())
     except ValueError:
-        raise Exception("Your sudo or dev users list does not contain valid integers.")
+        raise Exception("Sudo və ya dev istifadəçilər siyahısında etibarlı tam ədədlər yoxdur.")
 
     try:
         DEMONS = set(int(x) for x in os.environ.get("DEMONS", "").split())
     except ValueError:
-        raise Exception("Your support users list does not contain valid integers.")
+        raise Exception("Dəstək istifadəçiləri siyahısında etibarlı tam ədədlər yoxdur.")
 
     try:
         TIGERS = set(int(x) for x in os.environ.get("TIGERS", "").split())
     except ValueError:
-        raise Exception("Your tiger users list does not contain valid integers.")
+        raise Exception("Pələng istifadəçilər siyahısında etibarlı tam ədədlər yoxdur.")
 
     try:
         WOLVES = set(int(x) for x in os.environ.get("WOLVES", "").split())
     except ValueError:
-        raise Exception("Your whitelisted users list does not contain valid integers.")
+        raise Exception("Ağ siyahıya salınmış istifadəçilər siyahısında etibarlı tam ədədlər yoxdur.")
 
 else:
     from FallenRobot.config import Development as Config
@@ -111,33 +111,33 @@ else:
     try:
         OWNER_ID = int(Config.OWNER_ID)
     except ValueError:
-        raise Exception("Your OWNER_ID variable is not a valid integer.")
+        raise Exception("OWNER_ID dəyişəniniz etibarlı tam ədəd deyil.")
 
     try:
         BL_CHATS = set(int(x) for x in Config.BL_CHATS or [])
     except ValueError:
-        raise Exception("Your blacklisted chats list does not contain valid integers.")
+        raise Exception("Qara siyahıya salınmış söhbətlər siyahısında etibarlı tam ədədlər yoxdur.")
 
     try:
         DRAGONS = set(int(x) for x in Config.DRAGONS or [])
         DEV_USERS = set(int(x) for x in Config.DEV_USERS or [])
     except ValueError:
-        raise Exception("Your sudo or dev users list does not contain valid integers.")
+        raise Exception("Sudo və ya dev istifadəçilər siyahısında etibarlı tam ədədlər yoxdur.")
 
     try:
         DEMONS = set(int(x) for x in Config.DEMONS or [])
     except ValueError:
-        raise Exception("Your support users list does not contain valid integers.")
+        raise Exception("Dəstək istifadəçiləri siyahısında etibarlı tam ədədlər yoxdur.")
 
     try:
         TIGERS = set(int(x) for x in Config.TIGERS or [])
     except ValueError:
-        raise Exception("Your tiger users list does not contain valid integers.")
+        raise Exception("Pələng istifadəçilər siyahısında etibarlı tam ədədlər yoxdur.")
 
     try:
         WOLVES = set(int(x) for x in Config.WOLVES or [])
     except ValueError:
-        raise Exception("Your whitelisted users list does not contain valid integers.")
+        raise Exception("Ağ siyahıya salınmış istifadəçilər siyahısında etibarlı tam ədədlər yoxdur.")
 
 
 DRAGONS.add(OWNER_ID)
