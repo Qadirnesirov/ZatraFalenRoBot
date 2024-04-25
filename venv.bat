@@ -1,6 +1,6 @@
-TITLE Setting up virtual env
+TITLE Virtual mühitin qurulması
 :: Running it once is fine, this just sets up virtual env >> install all modules there 
 py -m venv env && env\scripts\activate.bat && pip install -r requirements.txt
 
-:: Note to rerun the requirements.txt in case you ever add a module.
-:: Running this multiple time will not make a mess of your setup, dont worry about that bit.
+:: Nə vaxtsa modul əlavə etsəniz, requirements.txt faylını yenidən işə salın.
+:: Bunu dəfələrlə yerinə yetirmək quraşdırmanızı pozmayacaq, bu barədə narahat olmayın.
