@@ -8,7 +8,7 @@
   <img src="https://github.com/Qadirnesirov/ZatraFalenRoBot/blob/master/ZatraBot/resources/fglitch.gif">
 </p>
 
-_**ᴀᴠᴀɪʟᴀʙʟe ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs [ғᴀʟʟᴇɴ ✘ ʀᴏʙᴏᴛ](https://t.me/ZatraBot)**_
+_**ᴀᴠᴀɪʟᴀʙʟe ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs [Zatra ✘ Nezaret](https://t.me/ZatraBot)**_
 ━━━━━━━━━━━━━━━━━━━━
 
 <p align="center">
